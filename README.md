@@ -11,3 +11,4 @@ This repository documents my daily Docker practice and DevOps fundamentals.
 - Day 04: Built custom NGINX image using Dockerfile
 - Day 05: Docker networking, volumes, and multi-container architecture.
 - Day 06: Practiced To create a Docker volume, attach it , store data inside the volume, remove the container, and verify.
+- Day 07: Practiced making bridge network and connection containers, then deleted them.
