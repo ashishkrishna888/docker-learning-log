@@ -13,3 +13,5 @@ This repository documents my daily Docker practice and DevOps fundamentals.
 - Day 06: Practiced To create a Docker volume, attach it , store data inside the volume, remove the container, and verify.
 - Day 07: Practiced making bridge network and connection containers, then deleted them.
 - Day 08: Docker Compose multi-container setup (Frontend + Backend + PostgreSQL).
+- Day 09: Docker compose
+- Day 10: Maven build using Docker Compose and containerized build environment
