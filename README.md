@@ -19,4 +19,5 @@ This repository documents my daily Docker practice and DevOps fundamentals.
 * Day 11: Maven + Docker integration (build JAR → create Docker image → run container)
 * Day 12: Maven Wrapper (mvnw) + Java JAR execution.
 * Day 13: GitHub Actions CI/CD with Docker (automatic Docker build on push)
+* Day 14: Multi-container CI/CD using Docker Compose
 
