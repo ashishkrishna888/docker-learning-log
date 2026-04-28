@@ -18,18 +18,26 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up JDK 17
+      # Install Java 21
+      - name: Set up JDK 21
         uses: actions/setup-java@v4
         with:
           java-version: '21'
           distribution: 'temurin'
 
+      # DEBUG STEP (IMPORTANT)
+      - name: Check Java version
+        run: java -version
+
+      # Build
       - name: Build project
         run: mvn clean install
 
+      # Test
       - name: Run tests
         run: mvn test
 
+      # Upload artifact
       - name: Upload JAR file
         uses: actions/upload-artifact@v4
         with:
