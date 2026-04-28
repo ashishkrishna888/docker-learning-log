@@ -21,7 +21,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Move to project folder
-        run: cd Day011
+        run: cd Day011/docker-maven-demo
 
       - name: Build project
         run: |
