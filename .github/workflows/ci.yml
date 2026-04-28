@@ -10,6 +10,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: Day011/docker-maven-demo
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -20,21 +24,14 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Move to project folder
-        run: cd Day011/docker-maven-demo
-
       - name: Build project
-        run: |
-          cd Day011
-          mvn clean install
+        run: mvn clean install
 
       - name: Run tests
-        run: |
-          cd Day011
-          mvn test
+        run: mvn test
 
       - name: Upload JAR file
         uses: actions/upload-artifact@v4
         with:
           name: java-artifact
-          path: Day011/target/*.jar
+          path: Day011/docker-maven-demo/target/*.jar
