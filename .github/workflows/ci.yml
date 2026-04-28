@@ -20,14 +20,21 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
+      - name: Move to project folder
+        run: cd Day011
+
       - name: Build project
-        run: mvn clean install
+        run: |
+          cd Day011
+          mvn clean install
 
       - name: Run tests
-        run: mvn test
+        run: |
+          cd Day011
+          mvn test
 
       - name: Upload JAR file
         uses: actions/upload-artifact@v4
         with:
           name: java-artifact
-          path: target/*.jar
+          path: Day011/target/*.jar
